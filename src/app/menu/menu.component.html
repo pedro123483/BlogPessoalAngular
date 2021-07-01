@@ -6,11 +6,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <img src="../../assets/pedro.jpeg" alt="Imagem do usuário" width="50px" height="50px" class="img-fluid rounded-circle">
+          <li class="nav-item text-white">
+            <img src="{{foto}}" alt="Imagem do usuário" width="90px" height="40px" class="img-fluid rounded-circle">
         </li>
           <li class="nav-item">
-            <p class="fw-lighter text-white fs-16 mt-2 ms-2 me-2">Nome do usuário</p>
+            <p class="fw-lighter text-white fs-16 mt-2 ms-2 me-2">{{nome}}</p>
           </li>
 
           <li class="nav-item">
@@ -22,7 +22,7 @@
 
          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
             <li class="nav-item">
-                <a class="fw-lighter text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i> </a>
+                <a (click)='sair()' class="fw-lighter text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i> </a>
               </li>
 
          </ul>
