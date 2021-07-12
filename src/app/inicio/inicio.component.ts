@@ -23,6 +23,8 @@ export class InicioComponent implements OnInit {
   tema: Tema = new Tema()
   user: Usuario = new Usuario()
   idUser = environment.id
+  key = 'data'
+  reverse = true
 
   constructor(
     private router: Router,
