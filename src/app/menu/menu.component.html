@@ -13,7 +13,7 @@
             <p class="fw-lighter text-white fs-16 mt-2 ms-2 me-2">{{nome}}</p>
           </li>
 
-          <li class="nav-item">
+          <li *ngIf='auth.adm()' class="nav-item">
            <a [routerLink]="['/user-edit', id]">
             <p class="fw-lighter text-white fs-16 mt-2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></p>
            </a>
